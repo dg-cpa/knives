@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invoice Form</title>
+</head>
+<body>
+    <h2>Invoice Submission Form</h2>
+    <form id="invoiceForm">
+        <label for="to">To:</label><br>
+        <input type="text" id="to" name="to"><br>
+
+        <label for="from">From:</label><br>
+        <input type="text" id="from" name="from"><br>
+
+        <label for="invoiceDate">Invoice Date:</label><br>
+        <input type="date" id="invoiceDate" name="invoiceDate"><br>
+
+        <label for="dueDate">Due Date:</label><br>
+        <input type="date" id="dueDate" name="dueDate"><br>
+
+        <label for="itemDescription">Item Description:</label><br>
+        <input type="text" id="itemDescription" name="itemDescription"><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity"><br>
+
+        <label for="unitPrice">Unit Price:</label><br>
+        <input type="number" id="unitPrice" name="unitPrice" step="0.01"><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <div id="result"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
