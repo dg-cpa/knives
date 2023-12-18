@@ -6,26 +6,26 @@
 <body>
     <h2>Invoice Submission Form</h2>
     <form id="invoiceForm">
-        <label for="to">To:</label><br>
-        <input type="text" id="to" name="to"><br>
-
         <label for="from">From:</label><br>
         <input type="text" id="from" name="from"><br>
 
-        <label for="invoiceDate">Invoice Date:</label><br>
-        <input type="date" id="invoiceDate" name="invoiceDate"><br>
+        <label for="to">To:</label><br>
+        <input type="text" id="to" name="to"><br>
 
-        <label for="dueDate">Due Date:</label><br>
-        <input type="date" id="dueDate" name="dueDate"><br>
+        <label for="date">Invoice Date:</label><br>
+        <input type="text" id="date" name="date"><br>
 
-        <label for="itemDescription">Item Description:</label><br>
-        <input type="text" id="itemDescription" name="itemDescription"><br>
+        <label for="due_date">Due Date:</label><br>
+        <input type="text" id="due_date" name="due_date"><br>
 
-        <label for="quantity">Quantity:</label><br>
-        <input type="number" id="quantity" name="quantity"><br>
+        <label for="items[0][name]">Item Description:</label><br>
+        <input type="text" id="items[0][name]" name="items[0][name]"><br>
 
-        <label for="unitPrice">Unit Price:</label><br>
-        <input type="number" id="unitPrice" name="unitPrice" step="0.01"><br>
+        <label for="items[0][quantity]">Quantity:</label><br>
+        <input type="number" id="items[0][quantity]" name="items[0][quantity]"><br>
+
+        <label for="items[0][unit_cost]">Unit Price:</label><br>
+        <input type="number" id="items[0][unit_cost]" name="items[0][unit_cost]" step="0.01"><br>
 
         <input type="submit" value="Submit">
     </form>
