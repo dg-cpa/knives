@@ -3,21 +3,21 @@ document.getElementById('invoiceForm').addEventListener('submit', function(event
     event.preventDefault();
 
     let invoiceData = {
-        to: document.getElementById('to').value,
         from: document.getElementById('from').value,
-        invoice_date: document.getElementById('invoiceDate').value,
-        due_date: document.getElementById('dueDate').value,
+        to: document.getElementById('to').value,
+        date: document.getElementById('date').value,
+        due_date: document.getElementById('due_date').value,
         items: [
             {
-                name: document.getElementById('itemDescription').value,
+                name: document.getElementById('name').value,
                 quantity: parseInt(document.getElementById('quantity').value, 10),
-                unit_cost: parseFloat(document.getElementById('unitPrice').value)
+                unit_cost: parseFloat(document.getElementById('unit_cost').value)
             }
         ]
     };
 
     fetch('https://invoice-generator.com', {
-        method: 'POST',
+        method: 'GET',
         headers: {
             'Content-Type': 'application/json',
         },
